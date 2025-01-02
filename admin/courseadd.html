@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="courseadd.css" />
+    <title>Add a Course</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Create Post</h1>
+
+      <label for="imagePicker">Upload Image</label>
+      <input type="file" id="imagePicker" accept="image/*" />
+
+      <label for="heading">Heading</label>
+      <input type="text" id="heading" placeholder="Enter heading" />
+
+      <label for="paragraph1">Paragraph 1</label>
+      <textarea
+        id="paragraph1"
+        rows="3"
+        placeholder="Enter first paragraph"
+      ></textarea>
+
+      <label for="paragraph2">Paragraph 2</label>
+      <textarea
+        id="paragraph2"
+        rows="3"
+        placeholder="Enter second paragraph"
+      ></textarea>
+
+      <label for="paragraph3">Paragraph 3</label>
+      <textarea
+        id="paragraph3"
+        rows="3"
+        placeholder="Enter third paragraph"
+      ></textarea>
+
+      <div class="button-group">
+        <button onclick="submitForm()">Submit</button>
+        <button onclick="resetForm()">Reset</button>
+      </div>
+    </div>
+
+    <script>
+      function submitForm() {
+        alert("Form submitted!");
+        // Add form submission logic here
+      }
+
+      function resetForm() {
+        document.getElementById("imagePicker").value = "";
+        document.getElementById("heading").value = "";
+        document.getElementById("paragraph1").value = "";
+        document.getElementById("paragraph2").value = "";
+        document.getElementById("paragraph3").value = "";
+      }
+    </script>
+  </body>
+</html>
