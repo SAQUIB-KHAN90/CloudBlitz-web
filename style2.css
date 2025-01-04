@@ -1,0 +1,133 @@
+body {
+  background-color: #1f2641;
+}
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-left: 20px;
+  background: #2e3267;
+  color: white;
+  font-weight: 22px;
+  list-style: none;
+  line-height: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  flex: 1;
+  margin-right: 20px;
+  padding-left: 10px;
+  flex-direction: column-reverse;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  inline-size: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
+}
+
+.right-section {
+  flex: 2;
+  flex-wrap: nowrap;
+  margin-left: 20px;
+  padding-left: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  inline-size: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  background-color: aqua;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.cta {
+  background-color: black;
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.main-container {
+  display: flow-root;
+  align-items: last baseline;
+  justify-content: safe;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: #1f2641;
+  font-smooth: antialiased;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  line-height: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  z-index: -1;
+  cursor: pointer;
+}
+
+h3{
+    color: #000;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    line-height: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    z-index: -1;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sub-set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #1f2641;
+    font-smooth: antialiased;
+    font-family: "Roboto", sans-serif;
+}
+
+@media (max-widdth: 768px) {
+    .main-container{
+        width: 50%;
+        height: 100vh;
+        margin: 0 auto;
+    }
+}
