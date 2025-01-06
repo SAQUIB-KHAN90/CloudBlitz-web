@@ -371,7 +371,7 @@ header {
 }
 
 .item8 {
-  animation-delay: calc(30s / 8 * (8 - 8) * -1);   
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
 
 /* Responsive Design */
@@ -1204,7 +1204,7 @@ rgba(0, 0, 0, 0)
   font-size: 1em;
   cursor: pointer;
 }
-.para111{
+.para111 {
   margin-top: 10px;
   margin-bottom: 7px;
 }
@@ -1272,16 +1272,16 @@ rgba(0, 0, 0, 0)
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Changed from height for flexibility */
-  padding: 1rem; /* Added padding for smaller screens */
-  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+  min-height: 100vh;
+  padding: 1rem;
+  flex-wrap: wrap;
 }
 
 .comparison-container {
   width: 100%;
   max-width: 1000px;
   margin: 20px;
-  padding: 1rem; /* Added padding for smaller screens */
+  padding: 1rem;
   box-sizing: border-box; /* Ensure padding doesn't overflow */
 }
 
@@ -1338,7 +1338,7 @@ rgba(0, 0, 0, 0)
 }
 
 .comparison-panel li:last-child {
-  border-bottom: none;
+  border-bottom: none;  
 }
 
 .comparison-panel li i {
@@ -1415,7 +1415,7 @@ rgba(0, 0, 0, 0)
   margin-top: 20px;
 }
 .contact12-buttons a {
-  text-decoration: none;
+  text-decoration: none; 
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
