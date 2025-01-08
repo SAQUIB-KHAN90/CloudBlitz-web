@@ -196,39 +196,59 @@ h4 {
 
 /* Hero */
 
-.heroo-container {
+.hero-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* padding: 50px; */
+  padding: 30px;
+}
+.hero-text-content {
+  margin-top: 20px;
   max-width: 100%;
-  margin-left: 100px;
+  margin-left: 40px;
 }
-.heroo-content {
-  max-width: 500px;
-}
-.heroo-content h1 {
-  font-size: 30px;
+.hero-text-content h1 {
+  font-size: 48px;
   margin-bottom: 20px;
 }
-.heroo-content p {
-  font-size: 16px;
-  line-height: 1.5;
+.hero-text-content p {
+  font-size: 18px;
   margin-bottom: 30px;
 }
-.heroo-content a {
+.hero-text-content a {
   display: inline-block;
   padding: 15px 30px;
   background-color: #ff6b6b;
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
-  font-weight: bold;
+  font-size: 18px;
+}
+.hero-image-content {
+  position: relative;
+  margin-right: 0;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+.hero-image-content img {
+  max-width: 850px;
+  height: auto;
+  top: 0;
 }
 
-.heroo-image-container img {
-  height: auto;
-  width: 1000px;
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .hero-image-content {
+    max-width: 100%;
+  }
 }
 
 /* ***     ***        ****    SKILLS    ***    ***  *** */
