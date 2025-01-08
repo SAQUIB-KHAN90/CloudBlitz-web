@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 100%;
 }
 
 section h2 {
@@ -70,7 +70,7 @@ h4 {
 
 /*  ***     ***        ****    Navbar    ***    ***  *** */
 
-.header {
+.headerr {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,54 +79,58 @@ h4 {
   font-size: 15px;
   font-weight: 500;
 }
-.header .logo {
+.headerr .logo {
   display: flex;
   align-items: center;
 }
-.header .logo img {
+.headerr .logo img {
   width: 80px;
   height: 80px;
 }
-.header .nav-links {
+.headerr .nav-links {
   display: flex;
   align-items: center;
 }
-.header .nav-links a {
+.headerr .nav-links a {
   margin: 0 10px;
   text-decoration: none;
   font-size: 14px;
   color: #fff;
 }
-.header .nav-links a.active {
+.headerr .nav-links a.active {
   font-weight: bold;
   border-bottom: 2px solid #4c6f8d;
 }
-.header .contact-info {
+.headerr .contact-info {
   display: flex;
   align-items: center;
   color: #fff;
 }
-.header .contact-info i {
+.headerr .contact-info i {
   margin-right: 5px;
   color: #fff;
 }
-.header .contact-info a {
+.headerr .contact-info a {
   margin: 0 10px;
   text-decoration: none;
   font-size: 14px;
   color: #fff;
 }
-.header .social-icons {
+.headerr .social-icons {
   display: flex;
   align-items: center;
   gap: 10px;
   color: #fff;
 }
-.header .social-icons a {
+.headerr .social-icons a {
   margin: 0 5px;
   text-decoration: none;
   font-size: 18px;
   color: #fff;
+}
+.headerr .social-icons img {
+  width: 30px;
+  height: 30px;
 }
 .cta-button {
   background-color: #4c6f8d;
@@ -144,7 +148,6 @@ h4 {
   padding: 10px 20px;
   border-top: 1px solid #ccc;
   gap: 100px;
-  margin-bottom: 10px;
   font-size: 15px;
   font-weight: 600;
 }
@@ -193,77 +196,39 @@ h4 {
 
 /* Hero */
 
-header {
-  position: relative;
-  top: 5rem;
-  overflow: hidden;
-  height: 70vh;
-  margin-bottom: 5rem;
-  margin-left: auto; /* Adjust margin for better centering */
-  margin-right: auto;
-  width: 90%;
-  gap: 300px; /* Reduced gap for smaller screens */
-  margin-left: 150px;
-}
-
-.header__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.heroo-container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 5rem; /* Reduced gap for smaller screens */
-  height: auto; /* Allow height to adjust based on content */
+  /* padding: 50px; */
+  max-width: 100%;
+  margin-left: 100px;
+}
+.heroo-content {
+  max-width: 500px;
+}
+.heroo-content h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.heroo-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.heroo-content a {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff6b6b;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-.header__right img {
-  width: 100%;
-  object-fit: cover;
-  max-width: 100%; /* Ensure image doesn't overflow */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.header__left p {
-  margin: 1rem 0 2.4rem;
-  font-size: 1rem; /* Ensure text is legible on smaller screens */
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  header {
-    height: auto; /* Allow height to adjust for smaller screens */
-    margin-left: 1rem; /* Reduced margin for smaller screens */
-    margin-right: 1rem;
-  }
-
-  .header__container {
-    grid-template-columns: 1fr; /* Stack content vertically */
-    gap: 2rem; /* Reduce gap between items */
-  }
-
-  .header__right img {
-    width: 100%; /* Ensure image scales correctly */
-    object-fit: contain; /* Adjust fit for smaller screens */
-  }
-
-  .header__left p {
-    font-size: 0.9rem; /* Slightly smaller font size */
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    margin-left: 0.5rem; /* Further reduced margins */
-    margin-right: 0.5rem;
-    top: 2rem; /* Adjust top positioning */
-    width: 90%;
-  }
-
-  .header__container {
-    gap: 1.5rem; /* Further reduce gap */
-  }
-
-  .header__left p {
-    font-size: 0.8rem; /* Smaller font size for very small screens */
-  }
+.heroo-image-container img {
+  height: auto;
+  width: 1000px;
 }
 
 /* ***     ***        ****    SKILLS    ***    ***  *** */
@@ -278,7 +243,7 @@ header {
 }
 
 .para {
-  margin-top: 4rem;
+  margin-top: 150px;
   text-align: center;
   color: #fff;
   font-family: "Montserrat", serif;
@@ -1338,7 +1303,7 @@ rgba(0, 0, 0, 0)
 }
 
 .comparison-panel li:last-child {
-  border-bottom: none;  
+  border-bottom: none;
 }
 
 .comparison-panel li i {
@@ -1415,7 +1380,7 @@ rgba(0, 0, 0, 0)
   margin-top: 20px;
 }
 .contact12-buttons a {
-  text-decoration: none; 
+  text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
